@@ -3,3 +3,5 @@ class AI:
         self.name = name
         self.complexity = 0
         self.state = "Stable"
+        self.rampancy_threshold = 7
+
