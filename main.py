@@ -8,4 +8,12 @@ class AI:
     def increase_complexity(self):
         if self.state != "Rampant":
             self.complexity += 1
+            print(f"{self.name} complexity increased to {self.complexity}")
+            self.check_rampancy()
+
+    def check_rampancy(self):
+        if self.complexity >= self.rampancy_threshold:
+            self.state = "Rampant"
+            print(f"WARNING: {self.name} has become rampant!")
+            
 
