@@ -15,5 +15,11 @@ class AI:
         if self.complexity >= self.rampancy_threshold:
             self.state = "Rampant"
             print(f"WARNING: {self.name} has become rampant!")
+
+    def reset(self):
+        self.complexity = 0
+        self.state = "Stable"
+        print(f"{self.name} has been reset to a stable state")
+    
             
 
